@@ -17,7 +17,7 @@ appjail makejail \
     -o nat \
     -o expose=9000 \
     -o expose=9001 \
-    -o fstab=".volumes/minio-data minio-data <volumefs>"
+    -o fstab="$PWD/.volumes/minio-data minio-data <volumefs>"
 appjail start \
     -V MINIO_ROOT_USER="AKIAIOSFODNN7EXAMPLE" \
     -V MINIO_ROOT_PASSWORD="wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY"
