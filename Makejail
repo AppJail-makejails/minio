@@ -1,0 +1,36 @@
+INCLUDE options/options.makejail
+
+ARG minio_tag=13.2
+
+FROM --entrypoint gh+AppJail-makejails/minio minio:${minio_tag}
+
+COPY files/minio-server.sh /usr/local/bin
+
+STOP
+
+STAGE start
+
+ENV MINIO_ADDRESS=0.0.0.0:9000
+ENV MINIO_CONSOLE_ADDRESS=0.0.0.0:9001
+ENV MINIO_VOLUMES=/var/db/minio
+
+RUN daemon \
+        -r \
+	-u minio \
+        -t "Amazon S3 compatible object storage server" \
+        -P /var/tmp/minio/.master.pid \
+        -p /var/tmp/minio/.pid \
+        -o /var/tmp/minio/minio.log \
+		minio-server.sh
+
+STAGE custom:minio_status
+
+CMD if [ -f "/var/tmp/minio/.pid" ]; then \
+        top -ap `head -1 /var/tmp/minio/.pid`; \
+    fi
+
+STAGE custom:minio_log
+
+CMD if [ -f "/var/tmp/minio/minio.log" ]; then \
+        less -R /var/tmp/minio/minio.log; \
+    fi
