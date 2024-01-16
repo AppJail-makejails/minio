@@ -1,0 +1,1 @@
+OPTION volume=minio-data mountpoint:/var/db/minio owner:473 group:473

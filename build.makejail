@@ -1,0 +1,7 @@
+INCLUDE options/options.makejail
+INCLUDE options/volumes.makejail
+
+PKG minio
+
+CMD mkdir -p /var/db/minio
+CMD chown minio:minio /var/db/minio
