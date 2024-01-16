@@ -1,0 +1,16 @@
+tags+: 13.2
+13.2.arch: amd64
+13.2.name: "minio"
+13.2.timestamp.amd64: 1705438899
+13.2.sum.amd64: 240860f622ec94f54b410c169ad875ecdb7844d48d3d311b0aa48b15ef306ac3
+13.2.size.amd64: 63008731
+13.2.source.amd64: "http://appjail.hpc.at/minio/13.2-amd64-image.appjail"
+13.2.source.amd64+: "https://images.all101bsd.download/minio/13.2-amd64-image.appjail"
+tags+: 14.0
+14.0.arch: amd64
+14.0.name: "minio"
+14.0.timestamp.amd64: 1705439049
+14.0.sum.amd64: 37b00c9cb94c993980abaa487138e2f1aa0435b41e762dc498aeffb330fc8fe3
+14.0.size.amd64: 63051652
+14.0.source.amd64: "http://appjail.hpc.at/minio/14.0-amd64-image.appjail"
+14.0.source.amd64+: "https://images.all101bsd.download/minio/14.0-amd64-image.appjail"
