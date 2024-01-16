@@ -20,7 +20,7 @@ appjail makejail \
     -o fstab="$PWD/.volumes/minio-data minio-data <volumefs>"
 appjail start \
     -V MINIO_ROOT_USER="AKIAIOSFODNN7EXAMPLE" \
-    -V MINIO_ROOT_PASSWORD="wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY"
+    -V MINIO_ROOT_PASSWORD="wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY" \
     minio
 ```
 
