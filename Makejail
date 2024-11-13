@@ -15,10 +15,8 @@ ENV MINIO_CONSOLE_ADDRESS=0.0.0.0:9001
 ENV MINIO_VOLUMES=/var/db/minio
 
 RUN daemon \
-        -r \
 	-u minio \
         -t "Amazon S3 compatible object storage server" \
-        -P /var/tmp/minio/.master.pid \
         -p /var/tmp/minio/.pid \
         -o /var/tmp/minio/minio.log \
 		minio-server.sh
