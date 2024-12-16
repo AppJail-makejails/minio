@@ -1,6 +1,6 @@
 INCLUDE options/options.makejail
 
-ARG minio_tag=13.4
+ARG minio_tag=%%TAG1%%
 ARG minio_ajspec=gh+AppJail-makejails/minio
 
 FROM --entrypoint "${minio_ajspec}" minio:${minio_tag}
