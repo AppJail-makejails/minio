@@ -1,16 +1,17 @@
 tags+: 13.5
 13.5.arch: amd64
 13.5.name: "minio"
-13.5.timestamp.amd64: 1747831333
-13.5.sum.amd64: 33f0fb5aa5ffe104606444c67d6efd8de068cf06ab0a5de7e33b21ab7412ebe4
-13.5.size.amd64: 70323703
+13.5.timestamp.amd64: 1749643056
+13.5.sum.amd64: 9502572515b2660bb7992220883e5fed5e734fbb0210232ff21782852aa1aad3
+13.5.size.amd64: 70469449
 13.5.source.amd64: "https://images.all101bsd.download/minio/13.5-amd64-image.appjail"
 13.5.source.amd64+: "http://appjail.hpc.at/minio/13.5-amd64-image.appjail"
 tags+: 14.2
 14.2.arch: amd64
 14.2.name: "minio"
-14.2.timestamp.amd64: 1747831538
-14.2.sum.amd64: c601ebcba72178c6ae6513a64d5ed5a120f082a3d68ae054e371fa8ed0cfe01b
-14.2.size.amd64: 69864654
+14.2.timestamp.amd64: 1749643139
+14.2.sum.amd64: 5f36e476b2d4c35a30662888504de7a4b7b06ab406d281fdb6e51afb03dac4e9
+14.2.size.amd64: 68224262
 14.2.source.amd64: "https://images.all101bsd.download/minio/14.2-amd64-image.appjail"
 14.2.source.amd64+: "http://appjail.hpc.at/minio/14.2-amd64-image.appjail"
+maintenance: "This image is uploading, please wait a moment and try again. If you are importing this image using a Makejail that has the '--<name>_ajspec' argument, you can use the 'reproduce' method to use 'appjail-reproduce'. See 'appjail-image(5)' for details."
