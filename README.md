@@ -4,7 +4,7 @@ MinIO is a High-Performance Object Storage released under GNU Affero General Pub
 
 wikipedia.org/wiki/MinIO
 
-<img src="https://blog.min.io/content/images/2019/05/0_hReq8dEVSFIYJMDv.png" width="80%" height="auto">
+<img src="https://raw.githubusercontent.com/minio/minio/master/.github/logo.svg?sanitize=true" width="80%" height="auto">
 
 ## How to use this Makejail
 
